@@ -1,0 +1,15 @@
+
+
+
+<div class="answers">
+  <h2>Answers</h2>
+  {{new-answer question=model saveAnswer="saveAnswer"}}
+    {{#each model.answers as |answer|}}
+        <div class="answer-meta">
+          <h4>{{answer.author}}</h4>
+        </div>
+        <div class="answer-content">
+          <p>{{answer.content}}</p>
+        </div>
+    {{/each}}
+  </div>

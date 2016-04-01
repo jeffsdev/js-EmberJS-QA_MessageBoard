@@ -1,9 +1,11 @@
-<h2>QA Message Board</h2>
+<div class="askQuestionBox">
+  <h2>Ask A Question</h2>
 
-{{new-question saveQuestion="saveQuestion"}}
-<hr>
+  {{new-question saveQuestion="saveQuestion"}}
+</div>
+
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>

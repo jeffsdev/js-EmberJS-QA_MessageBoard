@@ -1,5 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
-{{#link-to 'index'}}Home{{/link-to}}<br><br>
-{{#link-to 'admin'}}Admin Portal{{/link-to}}
-<hr>
-{{outlet}}
+<header>
+  <h1>QA MessageBoard</h1>
+  <nav>
+    {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'admin'}}Admin Portal{{/link-to}}
+  </nav>
+</header>
+
+<div class="container">
+  {{outlet}}
+</div>
