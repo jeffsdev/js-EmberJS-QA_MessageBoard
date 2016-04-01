@@ -1,5 +1,5 @@
 <li>
-  <p>{{question.content}} | </p>
+  <p>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} | </p>
   <p>Asked by: {{question.author}} | </p>
   {{#if isDetailsShowing }}
       <p {{action 'detailsHide'}}>Notes: {{question.notes}} </p>

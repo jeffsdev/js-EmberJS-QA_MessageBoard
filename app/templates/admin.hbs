@@ -7,7 +7,7 @@
 
 <ul>
   {{#each model as |question|}}
-    {{admin-tile question=question destroyQuestion="destroyQuestion"}}
+    {{admin-tile question=question update="update" destroyQuestion="destroyQuestion"}}
     <hr>
   {{/each}}
 </ul>

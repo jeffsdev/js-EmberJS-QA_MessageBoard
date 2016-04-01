@@ -3,6 +3,7 @@
   <p>Asked by: {{question.author}} | </p>
   <p>Notes: {{question.notes}} </p>
 
+  {{update-question question=question update="update"}}
   <button {{action 'delete' question}}>Delete Question</button>
 
 </li>
