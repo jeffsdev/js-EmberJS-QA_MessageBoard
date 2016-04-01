@@ -1,0 +1,14 @@
+<h1>Admin Portal</h1>
+
+{{#link-to 'index'}}Home{{/link-to}}<br><br>
+
+<!-- {{new-question save="save"}} <br> -->
+<hr>
+
+<ul>
+  {{#each model as |question|}}
+    {{admin-tile question=question destroyQuestion="destroyQuestion"}}
+    <hr>
+  {{/each}}
+</ul>
+    <!-- {{admin-tile question=question update="update" destroyArticle="destroyArticle"}} -->
