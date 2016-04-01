@@ -1,11 +1,11 @@
-<div class="askQuestionBox">
-  <h2>Ask A Question</h2>
-
+<div class="ask-section">
   {{new-question saveQuestion="saveQuestion"}}
 </div>
-
-<ul>
-  {{#each model.questions as |question|}}
+<div class="question-feed">
+  <h2>Recent Questions</h2>
+  <ul>
+    {{#each model.questions as |question|}}
     {{question-tile question=question}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
+</div>

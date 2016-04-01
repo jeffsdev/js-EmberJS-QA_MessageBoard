@@ -1,0 +1,17 @@
+.ask-section {
+  display: flex;
+  height: 60vh;
+  background: #444;
+  background-image: url('http://orig03.deviantart.net/c6f5/f/2014/177/7/8/obelisk_by_erenarik-d7o16n1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  .ask-question-btn {
+    width: 300px;
+    height: 75px;
+    font-size: 2em;
+  }
+}

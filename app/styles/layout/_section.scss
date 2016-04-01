@@ -1,0 +1,33 @@
+.question-feed {
+  width: 100%;
+  margin: auto;
+  @media screen and(min-width: 768px) {
+    width: 75%;
+  }
+  h2 {
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    background: #777;
+    padding: 20px;
+    margin: 20px 0;
+    h3 {
+      color: #adf;
+      margin-top: 0;
+      cursor: pointer;
+    }
+    button {
+      width: 150px;
+      height: 35px;
+      background: none;
+      border: 3px solid #aef;
+      font-size: 1.1em;
+      color: #aef;
+      cursor: pointer;
+    }
+  }
+}
