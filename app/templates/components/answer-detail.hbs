@@ -8,6 +8,9 @@
       <div class="answer-block">
         <div class="answer-meta">
           <h4>{{answer.author}}</h4>
+          <p>Votecount: {{answer.vote}}</p>
+          <button {{action 'upvote' answer}}>Upvote</button>
+          <button {{action 'downvote' answer}}>Downvote</button>
         </div>
         <div class="answer-content">
           <p>{{answer.content}}</p>
