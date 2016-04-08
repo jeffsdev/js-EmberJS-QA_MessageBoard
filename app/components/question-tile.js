@@ -9,6 +9,11 @@ export default Ember.Component.extend({
     },
     detailsHide: function() {
       this.set('isDetailsShowing', false);
-    }
+    },
+    // answersTotal: Ember.computed('question.answers', function() {
+    //   var answers: this.get('questions').answers;
+    //   var numberAnswers = answers.length;
+    //   return numberAnswers;
+    // })
   }
 });

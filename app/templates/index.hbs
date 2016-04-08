@@ -1,11 +1,13 @@
 <div class="ask-section">
   {{new-question saveQuestion="saveQuestion"}}
 </div>
+    <!-- {{#link-to 'favorited'}}Favorites{{/link-to}}     -->
 <div class="question-feed">
   <h2>Recent Questions</h2>
   <ul>
     {{#each model.questions as |question|}}
     {{question-tile question=question}}
+      
     {{/each}}
   </ul>
 </div>

@@ -1,8 +1,12 @@
 <li>
   <h3>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h3>
   <p>Asked by: {{question.author}}</p>
+  <p>Answers: {{question-unanswered question}}</p>
+ <!--HELPER-->
   {{#if isDetailsShowing }}
       <p {{action 'detailsHide'}}>Notes: {{question.notes}} </p>
+
+      <!-- {{answer-quantity}} -->
     {{else}}
       <button {{action 'detailsShow'}}>Show Notes</button>
   {{/if}}
