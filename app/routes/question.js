@@ -16,7 +16,13 @@ export default Ember.Route.extend({
     },
     upvote(answer) {
       var voteCount = answer.get('vote');
-      answer.set('voteCount', vote + 1);
+      answer.set('vote', voteCount + 1);
+      answer.save();
+      this.transitionTo('question');
+    },
+    downvote(answer) {
+      var voteCount = answer.get('vote');
+      answer.set('vote', voteCount - 1);
       answer.save();
       this.transitionTo('question');
     }
