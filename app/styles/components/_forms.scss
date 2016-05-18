@@ -1,10 +1,10 @@
 .q-form {
-  width: 100%;
+  width: 100vw;
   // border: 2px solid green;
-  padding: 50px;
+  padding: 50px 20px;
   background: rgba(0, 0, 0, 0.5);
   @media screen and(min-width: 768px) {
-    width: 100%;
+    width: 500px;
   }
 
 
@@ -13,6 +13,13 @@ form {
     // border: 2px solid teal;
   // width: 80%;
   margin: auto;
+  label {
+    font-family: Norse;
+    letter-spacing: 3px;
+    @media screen and (min-width: 768px) {
+      font-size: 1.25em;
+    }
+  }
   input {
     color: #eee;
     width: 100%;
@@ -21,18 +28,12 @@ form {
     border-bottom: 5px solid #89a;
     background: none;
     outline: none;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-weight: 100;
     margin-bottom: 25px;
-    padding-left: 100px;
-  }
-  button {
-    display: block;
-    // width: 50%;
-    margin: 25px auto 0 auto;
-    height: 75px;
-    font-size: 2em;
-    background: none;
-    border: 2px solid #89a;
-    color: #eee;
+    padding: 10px 0 5px 0;
+    &:focus {
+      border-color: lighten(#89a, 25%);
+    }
   }
 }

@@ -3,6 +3,7 @@ header {
   flex-wrap: wrap;
   background: #222;
   height: 15vh;
+  min-height: 125px;
   align-items: center;
   color: #ccc;
   font-family: Norse;
@@ -36,7 +37,10 @@ nav {
   justify-content: center;
   a {
     color: #ccc;
-    margin: 0 20px;
+    margin: 0 30px;
+    &:hover {
+      color: #89a;
+    }
     @media screen and(min-width: 768px) {
       font-size: 1.5em;
     }

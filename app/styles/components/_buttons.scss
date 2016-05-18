@@ -1,0 +1,44 @@
+.ask-section {
+  .ask-question-btn {
+    width: 300px;
+    padding: 15px 0 10px 0;
+    font-size: 2em;
+    font-family: Norse;
+    letter-spacing: 5px;
+    background: none;
+    border: 3px solid #ccc;
+    color: #ccc;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+form {
+  button {
+    display: block;
+    // width: 50%;
+    margin: 25px auto 0 auto;
+    padding: 15px 15px 10px 15px;
+    font-size: 2em;
+    font-family: Norse;
+    letter-spacing: 5px;
+    background: none;
+    border: 2px solid #89a;
+    color: #eee;
+  }
+}
+
+.question-feed {
+  button {
+    width: 150px;
+    height: 35px;
+    background: none;
+    border: 3px solid #aef;
+    font-size: 1.1em;
+    color: #aef;
+    cursor: pointer;
+  }
+}
