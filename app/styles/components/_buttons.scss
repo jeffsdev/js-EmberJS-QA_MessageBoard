@@ -6,8 +6,8 @@
     font-family: Norse;
     letter-spacing: 5px;
     background: none;
-    border: 3px solid #ccc;
-    color: #ccc;
+    border: 3px solid $lightGray;
+    color: $lightGray;
     cursor: pointer;
     transition: 1s;
     &:hover {
@@ -26,8 +26,8 @@ form {
     font-family: Norse;
     letter-spacing: 5px;
     background: none;
-    border: 2px solid #89a;
-    color: #eee;
+    border: 2px solid $softBlue;
+    color: $offWhite;
   }
 }
 

@@ -1,11 +1,11 @@
 header {
   display: flex;
   flex-wrap: wrap;
-  background: #222;
+  background: $darkGray;
   height: 15vh;
   min-height: 125px;
   align-items: center;
-  color: #ccc;
+  color: $lightGray;
   font-family: Norse;
   .title {
     flex: 1 100%;
@@ -17,13 +17,13 @@ header {
     h2 {
       letter-spacing: 5px;
     }
-    @media screen and(min-width: 768px) {
+    @media screen and #{$tablet} {
       font-size: 100%;
       text-align: inherit;
       margin-left: 40px;
     }
   }
-  @media screen and(min-width: 768px) {
+  @media screen and #{$tablet} {
     flex-wrap: nowrap;
     .title {
       flex: 1 50%;
@@ -36,12 +36,12 @@ nav {
   flex: 1;
   justify-content: center;
   a {
-    color: #ccc;
+    color: $lightGray;
     margin: 0 30px;
     &:hover {
-      color: #89a;
+      color: $softBlue;
     }
-    @media screen and(min-width: 768px) {
+    @media screen and #{$tablet} {
       font-size: 1.5em;
     }
   }

@@ -3,7 +3,7 @@
   // border: 2px solid green;
   padding: 50px 20px;
   background: rgba(0, 0, 0, 0.5);
-  @media screen and(min-width: 768px) {
+  @media screen and #{$tablet} {
     width: 500px;
   }
 
@@ -16,16 +16,16 @@ form {
   label {
     font-family: Norse;
     letter-spacing: 3px;
-    @media screen and (min-width: 768px) {
+    @media screen and  #{$tablet} {
       font-size: 1.25em;
     }
   }
   input {
-    color: #eee;
+    color: $offWhite;
     width: 100%;
     min-height: 25px;
     border: none;
-    border-bottom: 5px solid #89a;
+    border-bottom: 5px solid $softBlue;
     background: none;
     outline: none;
     font-size: 1em;
@@ -33,7 +33,7 @@ form {
     margin-bottom: 25px;
     padding: 10px 0 5px 0;
     &:focus {
-      border-color: lighten(#89a, 25%);
+      border-color: lighten($softBlue, 25%);
     }
   }
 }
