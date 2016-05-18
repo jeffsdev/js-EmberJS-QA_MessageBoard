@@ -16,5 +16,10 @@
     font-size: 2em;
     background: none;
     border: 3px solid #000;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
   }
 }

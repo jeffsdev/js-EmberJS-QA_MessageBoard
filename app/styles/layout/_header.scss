@@ -2,13 +2,20 @@ header {
   display: flex;
   flex-wrap: wrap;
   background: #222;
-  height: 20vh;
+  height: 15vh;
   align-items: center;
   color: #ccc;
+  font-family: Norse;
   .title {
     flex: 1 100%;
     font-size: 60%;
     text-align: center;
+    h1 {
+      letter-spacing: 10px;
+    }
+    h2 {
+      letter-spacing: 5px;
+    }
     @media screen and(min-width: 768px) {
       font-size: 100%;
       text-align: inherit;
