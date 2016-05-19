@@ -9,9 +9,9 @@
       <li class="answer-block">
         <div class="answer-meta">
           <h4>{{answer.author}}</h4>
-          <p>Votecount: {{answer.vote}}</p>
-          <button {{action 'upvote' answer}}>Upvote</button>
-          <button {{action 'downvote' answer}}>Downvote</button>
+          <p>Upvotes: {{answer.vote}}</p>
+          <button class="uvote" {{action 'upvote' answer}}></button>
+          <button class="dvote" {{action 'downvote' answer}}></button>
         </div>
         <div class="answer-content">
           <p>{{answer.content}}</p>

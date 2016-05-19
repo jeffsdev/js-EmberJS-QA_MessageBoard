@@ -38,8 +38,10 @@ nav {
   a {
     color: $lightGray;
     margin: 0 30px;
+    transition: 500ms;
     &:hover {
-      color: $softBlue;
+      color: $lightBlue;
+      text-shadow: 0px 0px 20px #6FB7F6;
     }
     @media screen and #{$tablet} {
       font-size: 1.5em;

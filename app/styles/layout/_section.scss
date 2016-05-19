@@ -1,4 +1,5 @@
-.question-feed {
+.question-feed,
+.answers {
   width: 100%;
   margin: auto;
   @media screen and #{$tablet} {
@@ -31,11 +32,58 @@
       word-spacing: 10px;
       font-size: 1.5em;
       a {
-        color: #D1EDF9;
+        transition: 500ms;
+        color: $lightBlue;
         text-shadow: 0px 0px 20px #6FB7F6;
         &:hover {
           color: #6fb7f6;
         }
+      }
+    }
+  }
+}
+
+
+.answer-block {
+  display: flex;
+  .answer-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: lighten($darkGray, 5%);
+    padding: 0 20px 20px 20px;
+    margin-right: 1em;
+    width: 150px;
+    h4 {
+      margin-bottom:0;
+      margin-top: 1em;
+    }
+    .uvote {
+      width: 0;
+      height: 0;
+      margin-bottom: 10px;
+      padding: 0;
+      border-top: none;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 25px solid $softBlue;
+      &:hover,
+      &:active {
+        border-bottom: 25px solid $lightBlue;
+      }
+    }
+    .dvote {
+      width: 0;
+      height: 0;
+      padding: 0;
+      border-top: 25px solid $softBlue;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: none;
+      &:hover,
+      &:active {
+        border-top: 25px solid $lightBlue;
       }
     }
   }

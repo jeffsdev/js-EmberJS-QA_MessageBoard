@@ -1,3 +1,8 @@
+button {
+  outline: none;
+  transition: 500ms;
+}
+
 .ask-section {
   .ask-question-btn {
     width: 300px;
@@ -9,9 +14,11 @@
     border: 3px solid $lightGray;
     color: $lightGray;
     cursor: pointer;
-    transition: 1s;
+    box-shadow: 0px 0px 10px $darkGray;
+    text-shadow: 0px 0px 5px $darkGray;
     &:hover {
       background: rgba(255, 255, 255, 0.2);
+      color: #fff;
     }
   }
 }
@@ -32,7 +39,8 @@ form {
 }
 
 .question-feed,
-.big-q-section {
+.big-q-section,
+.answers {
   button {
     // width: 150px;
     height: 35px;
@@ -41,5 +49,14 @@ form {
     font-size: 1.1em;
     color: $softBlue;
     cursor: pointer;
+  }
+}
+
+.big-q-section button,
+.newanswer-btn {
+  &:hover,
+  &:active {
+    background: rgba(143, 159, 175, 0.2);
+    color: $lightBlue;
   }
 }
