@@ -41,7 +41,8 @@ form {
 .question-feed,
 .big-q-section,
 .answers {
-  button {
+  button,
+  .save-btn {
     // width: 150px;
     height: 35px;
     background: none;
@@ -50,10 +51,16 @@ form {
     color: $softBlue;
     cursor: pointer;
   }
+  .save-btn {
+    font-family: sans-serif;
+    letter-spacing: normal;
+    padding: 0 10px;
+  }
 }
 
 .big-q-section button,
-.newanswer-btn {
+.newanswer-btn,
+.save-btn {
   &:hover,
   &:active {
     background: rgba(143, 159, 175, 0.2);

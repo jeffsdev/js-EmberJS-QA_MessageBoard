@@ -5,6 +5,13 @@
   @media screen and #{$tablet} {
     width: 75%;
   }
+  h1 {
+    font-weight: normal;
+    color: #FFC27E;
+  }
+  label {
+    color: $lightGray;
+  }
   h2 {
     text-align: center;
     font-family: Norse;
