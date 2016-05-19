@@ -4,8 +4,9 @@
 <div class="answers">
   <h2>Answers</h2>
   {{new-answer question=model saveAnswer="saveAnswer"}}
+  <ul>
     {{#each sortedAnswers as |answer|}}
-      <div class="answer-block">
+      <li class="answer-block">
         <div class="answer-meta">
           <h4>{{answer.author}}</h4>
           <p>Votecount: {{answer.vote}}</p>
@@ -15,6 +16,7 @@
         <div class="answer-content">
           <p>{{answer.content}}</p>
         </div>
-      </div>
+      </li>
     {{/each}}
-  </div>
+  </ul>
+</div>

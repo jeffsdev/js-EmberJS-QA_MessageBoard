@@ -31,12 +31,13 @@ form {
   }
 }
 
-.question-feed {
+.question-feed,
+.big-q-section {
   button {
-    width: 150px;
+    // width: 150px;
     height: 35px;
     background: none;
-    border: 3px solid $softBlue;
+    border: 2px solid $softBlue;
     font-size: 1.1em;
     color: $softBlue;
     cursor: pointer;

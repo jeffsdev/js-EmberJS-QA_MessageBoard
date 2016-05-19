@@ -33,8 +33,13 @@
     word-spacing: 10px;
     font-size: 2em;
     color: #FFC27E;
+    text-shadow: 0px 0px 20px #B66204;
   }
   h4 {
     font-size: 1.5em;
+    text-shadow: 3px 3px 6px $darkGray;
+  }
+  p {
+    color: darken($offWhite, 25%);
   }
 }
