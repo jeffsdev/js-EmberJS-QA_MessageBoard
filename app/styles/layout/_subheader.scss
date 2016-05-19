@@ -11,3 +11,30 @@
   align-items: center;
   color: $offWhite;
 }
+
+.big-q-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 30vh;
+  padding: 0 40px;
+  background: #444;
+  background-image: url('http://orig03.deviantart.net/c6f5/f/2014/177/7/8/obelisk_by_erenarik-d7o16n1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  justify-content: center;
+  // border: 2px solid red;
+  color: $offWhite;
+  h2 {
+    margin: 0;
+    font-family: Norse;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-size: 2em;
+    color: #FFC27E;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+}

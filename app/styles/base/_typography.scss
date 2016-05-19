@@ -2,6 +2,11 @@
   font-family: Norse;
   src: url(../resources/fonts/Norse.otf);
 }
+@font-face {
+  font-family: Norse;
+  src: url(../resources/fonts/Norse-Bold.otf);
+  font-weight: bold;
+}
 
 body {
   font-family: sans-serif;
