@@ -3,7 +3,7 @@
 ##### By Jeff Seymour
 
 ## Description
-##### A Question and Answer message board app built with Ember 2.
+##### A Question and Answer message board app built with Ember 2.  Users can ask a question, which will get added to the database.  You can also view all the questions that have been asked, answer questions, and upvote/downvote them.  Through the admin page, users can edit and delete questions.
 
 ## Technologies Used
 Ember 2, JavaScript, Bower, HTML, SCSS, Firebase
