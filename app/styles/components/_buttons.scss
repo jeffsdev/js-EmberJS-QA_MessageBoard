@@ -4,18 +4,21 @@ button {
 }
 
 .ask-section {
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
   .ask-question-btn {
     width: 300px;
     padding: 15px 0 10px 0;
     font-size: 2em;
     font-family: Norse;
+    font-weight: bold;
     letter-spacing: 5px;
     background: none;
-    border: 3px solid $lightGray;
-    color: $lightGray;
+    border: 3px solid $darkGray;
+    color: $darkGray;
     cursor: pointer;
-    box-shadow: 0px 0px 10px $darkGray;
-    text-shadow: 0px 0px 5px $darkGray;
+    box-shadow: 0px 0px 10px $lightGray;
+    text-shadow: 0px 0px 5px $lightGray;
     &:hover {
       background: rgba(255, 255, 255, 0.2);
       color: #fff;
